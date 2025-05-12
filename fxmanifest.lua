@@ -1,20 +1,24 @@
 fx_version 'cerulean'
+game "gta5"
 
-games { 'gta5' }
+name "ton_surf"
+description "Permet d'avoir un surf en jeux."
+author "tontonCasi@twitch"
+version "1.0.0"
 
-version '0.1.0'
-lua54 'yes'
-
-server_scripts {
-    '@ox_lib/init.lua',
-    'serveur/server.lua',
-}
+lua54 "yes"
 
 client_scripts {
     "config.lua",
     "client/main.lua"
 }
+
+server_scripts {
+    "@ox_lib/init.lua",
+    "serveur/server.lua",
+}
+
 shared_scripts {
-	'@es_extended/imports.lua',
-    'config.lua',
+	"@es_extended/imports.lua",
+    "config.lua",
 }
